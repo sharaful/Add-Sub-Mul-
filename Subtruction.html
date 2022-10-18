@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title> Subtruction of two Numbers </title>
+	
+	<style>
+			body{background:green}
+			#heading{text-align: center}
+			.border{font-size: 300%}
+			.border{border-style: dotted}
+			.border{border-color: white}
+			#Form{border-style: dotted}
+			.form{border-color: red}
+			
+			
+		</style>
+	
+	<script>
+		function Mulnum(){
+			var a = parseInt(document.getElementById("Fnum").value);
+			var b = parseInt(document.getElementById("Snum").value);
+			var c = a-b;
+			document.getElementById("result").value = c;
+		}
+	</script>
+</head>
+<body>
+	<h1 id="heading" class="border"> Subtruction of two Numbers </h1>
+	<div id="Form" class="form">
+	<p> First Numbers </p>
+	<input id="Fnum"type=text>
+	<p> Second Numbers </p>
+	<input id="Snum"type=text>
+	<br></br>
+	<button onclick="Mulnum()"> Add Numbers </button>
+	<h2> Result </h2>
+	<input id="result"type=text>
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title> Addition of Three Numbers </title>
+		<style>
+			body{background:green}
+			#heading{text-align: center}
+			.border{font-size: 300%}
+			.border{border-style: dotted}
+			.border{border-color: white}
+			#Form{border-style: dotted}
+			.form{border-color: red}
+			
+			
+		</style>
+		
+		<script>
+			function Addnum(){
+			var a = parseInt(document.getElementById("Fnum").value);
+			var b = parseInt(document.getElementById("Snum").value);
+			var c = parseInt(document.getElementById("Tsum").value);
+			var d = a+b+c;
+			document.getElementById("result").value = d;
+			};
+		</script>
+	</head>
+	<body>
+		
+		<h1 id="heading" class="border"> Sum of Three Numbers </h1>
+		<div id="Form" class="form">
+		<p> First Numbers </p>
+		<input id="Fnum" type=text>
+		<p> Second Numbers </p>
+		<input id="Snum" type=text>
+		<p> Third Numbers </p>
+		<input id="Tsum"type=text>
+		<br><br>
+		<button onclick="Addnum()"> Add Numbers </button>
+		<h2> Result </h2>
+		<input id="result" type=text>
+		</div>
+	</body>
+</html>
